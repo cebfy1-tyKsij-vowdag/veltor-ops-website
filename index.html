@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VELTOR OPS – More clients for your business</title>
+<meta name="description" content="Veltor Ops helps remodeling, roofing, and landscaping contractors get more qualified leads and estimate appointments through Facebook and Instagram ads and automatic follow-up.">
+<meta property="og:title" content="VELTOR OPS – More clients for your business">
+<meta property="og:description" content="Qualified leads and estimate appointments for remodeling, roofing, and landscaping contractors.">
+<meta property="og:image" content="img/remodelacion.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%23B38A2E' d='M0 0h11l9 22 9-22h11L24 40h-8z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--char:#101820;--char2:#18232E;--gold:#E5B650;--white:#FFFFFF;--line:rgba(229,182,80,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--char);color:var(--white);font-family:'Inter',Arial,sans-serif;line-height:1.5}
+h1,h2,h3,.display{font-family:'Montserrat',Arial,sans-serif;font-weight:900;text-transform:uppercase;margin:0;line-height:1.02}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.eyebrow{color:var(--gold);font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:linear-gradient(180deg,#F3D284,#E5B650 55%,#C99A38);color:var(--char);font-family:'Montserrat',Arial,sans-serif;font-weight:900;text-transform:uppercase;text-decoration:none;border-radius:60px;padding:20px 40px;font-size:20px;letter-spacing:.01em;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.05)}
+.btn-sm{padding:12px 24px;font-size:15px}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(16,24,32,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{font-family:'Montserrat',Arial,sans-serif;font-weight:900;font-size:24px;letter-spacing:.04em;text-decoration:none}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;font-weight:500;font-size:15px;color:#E9E4DA}
+.links a:hover{color:var(--gold)}
+.lang-toggle{display:inline-flex;align-items:center;gap:0;border:1px solid var(--gold);background:transparent;color:var(--white);font-family:'Montserrat',Arial,sans-serif;font-weight:800;font-size:13px;letter-spacing:.08em;padding:0;cursor:pointer;height:40px}
+.lang-toggle span{padding:0 14px;height:100%;display:inline-flex;align-items:center;transition:background .2s,color .2s}
+.lang-toggle .on{background:var(--gold);color:var(--char)}
+.lang-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* hero */
+.hero{position:relative;padding:96px 0 110px;background:radial-gradient(1200px 500px at 85% -10%,#22313E 0%,transparent 60%),var(--char);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:76px;margin:18px 0 26px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.lead{font-size:21px;color:#E9E4DA;margin:0 0 14px}
+.lead strong{color:var(--gold);font-weight:600}
+.hero p.sales{font-size:19px;color:#CFC9BC;margin:0 0 36px;max-width:560px}
+.hero .note{margin-top:18px;font-size:15px;color:#CFC9BC}
+.photo-stack{display:grid;gap:14px}
+.photo{position:relative;overflow:hidden;border:1px solid var(--line);background:var(--char2)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,24,32,.92) 0%,rgba(16,24,32,.15) 60%,rgba(16,24,32,0) 100%);pointer-events:none}
+.photo .cap{position:absolute;left:22px;right:22px;bottom:18px;z-index:1}
+.photo .cap h3{font-size:24px;font-style:italic}
+.photo .cap p{margin:4px 0 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#E9E4DA}
+.photo-stack .photo{height:200px}
+/* sections */
+section{padding:96px 0}
+.sec-head{margin-bottom:56px;max-width:720px}
+.sec-head h2{font-size:52px;margin-top:14px}
+.sec-head h2 em{font-style:italic;color:var(--gold)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--char2);border:1px solid var(--line);padding:34px 28px;min-height:230px}
+.card .num{font-family:'Montserrat',Arial,sans-serif;font-weight:900;color:var(--gold);font-size:15px;letter-spacing:.18em}
+.card h3{font-size:22px;margin:18px 0 12px;line-height:1.15}
+.card p{margin:0;color:#CFC9BC;font-size:16px}
+.bg-alt{background:#0C131A;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.industries{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.industry{background:var(--char2);border:1px solid var(--line);overflow:hidden}
+.industry .photo{height:300px;border:0;border-bottom:1px solid var(--line)}
+.industry .body{padding:28px 30px 32px}
+.industry h3{font-size:28px;font-style:italic}
+.industry .sub{margin-top:12px;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#E9E4DA}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{border-top:3px solid var(--gold);padding-top:26px}
+.step .n{font-family:'Montserrat',Arial,sans-serif;font-weight:900;font-size:64px;color:var(--gold);line-height:1}
+.step h3{font-size:24px;margin:18px 0 12px}
+.step p{margin:0;color:#CFC9BC}
+.pillars{margin-top:64px;text-align:center;font-family:'Montserrat',Arial,sans-serif;font-weight:800;font-size:30px;text-transform:uppercase;line-height:1.3}
+.pillars span{color:var(--gold)}
+/* gold band */
+.band{background:linear-gradient(180deg,#F3D284,#E5B650 55%,#C99A38);color:var(--char);text-align:center;padding:84px 0}
+.band h2{font-size:58px}
+.band p{font-size:20px;margin:18px auto 36px;max-width:620px;font-weight:500}
+.btn-dark{background:var(--char);color:var(--gold)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{font-size:52px;margin:14px 0 20px}
+.contact h2 em{font-style:italic;color:var(--gold)}
+.contact p{color:#CFC9BC;font-size:18px;margin:0}
+form{background:var(--char2);border:1px solid var(--line);padding:36px}
+label{display:block;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#E9E4DA;margin-bottom:18px}
+input,select{display:block;width:100%;margin-top:8px;padding:14px 16px;background:var(--char);border:1px solid rgba(255,255,255,.18);color:var(--white);font:inherit;font-size:16px;border-radius:0}
+input:focus,select:focus{outline:2px solid var(--gold);outline-offset:0;border-color:var(--gold)}
+form .btn{width:100%;margin-top:6px}
+.thanks{display:none;margin-top:18px;color:var(--gold);font-weight:600}
+/* footer */
+footer{padding:44px 0;border-top:1px solid var(--line);font-size:15px;color:#CFC9BC}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .logo{color:var(--white)}
+/* responsive */
+@media (max-width:960px){
+  .hero-grid,.contact{grid-template-columns:1fr}
+  .hero h1{font-size:56px}
+  .services{grid-template-columns:1fr 1fr}
+  .industries,.steps{grid-template-columns:1fr}
+  .industry .photo{height:240px}
+  .links a:not(.btn-sm){display:none}
+  .sec-head h2,.band h2,.contact h2{font-size:42px}
+}
+@media (max-width:560px){
+  .hero{padding:64px 0 72px}
+  .hero h1{font-size:44px}
+  .services{grid-template-columns:1fr}
+  .btn{font-size:17px;padding:18px 26px;width:100%}
+  .btn-sm{width:auto}
+  .pillars{font-size:22px}
+  section{padding:72px 0}
+  .lang-toggle{height:36px}
+}
+/* light theme: white background, black text */
+:root{--char:#FFFFFF;--char2:#F5F2EA;--white:#000000}
+body{background:#FFFFFF;color:#000000}
+nav{background:rgba(255,255,255,.96);border-bottom:1px solid rgba(229,182,80,.6)}
+.links a{color:#000000}
+.links a:hover,.eyebrow,.lead strong,.hero h1 em,.sec-head h2 em,.contact h2 em,.pillars span,.card .num,.step .n,.logo span,.thanks,.lang-toggle{color:#B38A2E}
+.lang-toggle{color:#000000}
+.lang-toggle .on{background:#E5B650;color:#000000}
+.hero{background:#FFFFFF}
+.lead,.hero p.sales,.hero .note,.card p,.step p,.contact p,footer,.industry .sub,label,.pillars,.sec-head h2,.contact h2,.hero h1{color:#000000}
+.card,.industry,form{background:#F5F2EA;border-color:rgba(229,182,80,.6)}
+.bg-alt{background:#F5F2EA;border-color:rgba(229,182,80,.6)}
+.industry .photo{border-bottom:1px solid rgba(229,182,80,.6)}
+input,select{background:#FFFFFF;color:#000000;border-color:rgba(0,0,0,.25)}
+input:focus,select:focus{border-color:#B38A2E;outline-color:#B38A2E}
+.btn{color:#000000}
+.btn-dark{background:#000000;color:#E5B650}
+.band{color:#000000}
+.photo .cap h3,.photo .cap p{color:#FFFFFF}
+footer{border-top:1px solid rgba(229,182,80,.6)}
+footer .logo{color:#000000}
+/* motion */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes shimmer{to{background-position:200% 0}}
+@keyframes sweep{0%{left:-75%}60%,100%{left:125%}}
+@keyframes bandmove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero .eyebrow{animation:rise .8s both}
+.hero h1{animation:rise .9s .1s both}
+.hero .lead{animation:rise .9s .22s both}
+.hero p.sales{animation:rise .9s .34s both}
+.hero .btn{animation:rise .9s .46s both}
+.hero .note{animation:rise .9s .58s both}
+.photo-stack .photo{animation:rise 1s both}
+.photo-stack .photo:nth-child(1){animation-delay:.25s}
+.photo-stack .photo:nth-child(2){animation-delay:.4s}
+.photo-stack .photo:nth-child(3){animation-delay:.55s}
+.hero h1 em{background:linear-gradient(90deg,#B38A2E,#E5B650,#FFF1C2,#E5B650,#B38A2E);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite}
+.photo img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.photo:hover img{transform:scale(1.08)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.reveal.in{opacity:1;transform:none}
+.card.reveal.in:hover,.industry.reveal.in:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(16,24,32,.14);border-color:#E5B650}
+.industry.reveal.in:hover .photo img{transform:scale(1.08)}
+.industry .photo img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.step.reveal.in:hover .n{transform:translateX(6px)}
+.step .n{transition:transform .4s}
+.btn{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,filter .25s}
+.btn::after{content:"";position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:sweep 3.6s ease-in-out infinite;pointer-events:none}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(229,182,80,.5)}
+.btn:active{transform:translateY(0) scale(.98)}
+.band{background-size:200% 200%;animation:bandmove 12s ease-in-out infinite}
+nav{transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 10px 30px rgba(16,24,32,.10)}
+.links a:not(.btn-sm){position:relative}
+.links a:not(.btn-sm)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#E5B650;transition:width .3s}
+.links a:not(.btn-sm):hover::after{width:100%}
+.pillars span{background:linear-gradient(90deg,#B38A2E,#E5B650,#B38A2E);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s linear infinite}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hero h1 em{color:#B38A2E;background:none}
+}
+.hero h1 em{padding-right:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+/* mobile menu + dark contrast section */
+.menu-btn{display:none;background:none;border:1px solid #B38A2E;color:#000;width:44px;height:44px;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn svg{display:block}
+@media (max-width:960px){
+  .menu-btn{display:inline-flex}
+  .links{position:absolute;top:78px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#FFFFFF;border-bottom:1px solid rgba(229,182,80,.6);display:none;padding:12px 28px 20px}
+  .links.open{display:flex}
+  .links a:not(.btn-sm){display:block;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.08);font-size:17px}
+  .links a::after{display:none}
+  .links .btn-sm{margin-top:14px;text-align:center}
+  .lang-toggle{margin-top:14px;align-self:flex-start}
+}
+#proceso{background:#101820;border-top:1px solid rgba(229,182,80,.6);border-bottom:1px solid rgba(229,182,80,.6)}
+#proceso h2,#proceso h3,#proceso p,#proceso .pillars{color:#FFFFFF}
+#proceso .eyebrow,#proceso h2 em,#proceso .step .n,#proceso .pillars span{color:#E5B650;-webkit-text-fill-color:#E5B650}
+#proceso .step p{color:#CFC9BC}
+.req{color:#A4262C;margin-left:4px;font-weight:800}
+.req-note{margin:0 0 16px;font-size:14px;color:#000}
+.form-error{display:none;margin-top:18px;color:#A4262C;font-weight:600}
+.big-v-svg{display:inline-block;vertical-align:-4px;margin-right:2px}
+.big-v{font-size:1.7em;color:#B38A2E;line-height:0;display:inline-block;vertical-align:-0.06em;margin-right:1px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#inicio"><span class="big-v">V</span>ELTOR <span>OPS</span></a>
+    <div class="links">
+      <a href="#servicios" data-en="Services" data-es="Servicios">Servicios</a>
+      <a href="#industrias" data-en="Industries" data-es="Industrias">Industrias</a>
+      <a href="#proceso" data-en="How it works" data-es="Cómo funciona">Cómo funciona</a>
+      <a class="btn btn-sm" href="#contacto" data-en="Book your consultation" data-es="Agenda tu consulta">Agenda tu consulta</a>
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language / Cambiar idioma">
+        <span class="on" data-lang="es">ES</span><span data-lang="en">EN</span>
+      </button>
+    </div>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M0 1h22M0 8h22M0 15h22" stroke="#000" stroke-width="2"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" data-en="Marketing · Operations · Growth" data-es="Marketing · Operaciones · Crecimiento">Marketing · Operaciones · Crecimiento</div>
+      <h1 data-en='Want more clients for <em>your business?</em>' data-es='¿Quieres más clientes para <em>tu negocio?</em>'>¿Quieres más clientes para <em>tu negocio?</em></h1>
+      <p class="lead" data-en='Do you run a <strong>remodeling</strong>, <strong>roofing</strong>, or <strong>landscaping</strong> business?' data-es='¿Tienes un negocio de <strong>remodelación</strong>, <strong>roofing</strong> o <strong>landscaping</strong>?'>¿Tienes un negocio de <strong>remodelación</strong>, <strong>roofing</strong> o <strong>landscaping</strong>?</p>
+      <p class="sales" data-en="At Veltor Ops we help you get potential clients interested in your services through digital advertising and follow-up systems." data-es="En Veltor Ops te ayudamos a conseguir clientes potenciales interesados en tus servicios por medio de publicidad digital y sistemas de seguimiento.">En Veltor Ops te ayudamos a conseguir clientes potenciales interesados en tus servicios por medio de publicidad digital y sistemas de seguimiento.</p>
+      <a class="btn" href="#contacto" data-en="Book your free consultation!" data-es="¡Agenda tu consulta gratis!">¡Agenda tu consulta gratis!</a>
+      <p class="note" data-en="More opportunities. More estimate appointments. More chances to grow your business." data-es="Más oportunidades. Más citas para estimados. Más posibilidades de hacer crecer tu negocio.">Más oportunidades. Más citas para estimados. Más posibilidades de hacer crecer tu negocio.</p>
+    </div>
+    <div class="photo-stack" aria-label="Industrias que atendemos">
+      <div class="photo">
+        <img src="img/remodelacion.jpg" alt="Cocina de lujo remodelada con isla de mármol y lámparas colgantes" loading="eager">
+        <div class="cap"><h3 data-en="Remodeling" data-es="Remodelación">Remodelación</h3><p data-en="Kitchens · Baths · Additions" data-es="Kitchens · Baths · Additions">Kitchens · Baths · Additions</p></div>
+      </div>
+      <div class="photo">
+        <img src="img/roofing.jpg" alt="Techo residencial terminado al atardecer" loading="eager">
+        <div class="cap"><h3>Roofing</h3><p data-en="Replacement · Repairs · Exteriors" data-es="Replacement · Repairs · Exteriors">Replacement · Repairs · Exteriors</p></div>
+      </div>
+      <div class="photo">
+        <img src="img/landscaping.jpg" alt="Jardín profesional con muro de piedra e iluminación" loading="eager">
+        <div class="cap"><h3>Landscaping</h3><p data-en="Cleanups · Maintenance · Installs" data-es="Cleanups · Maintenance · Installs">Cleanups · Maintenance · Installs</p></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-en="Our services" data-es="Nuestros servicios">Nuestros servicios</div>
+      <h2 data-en='Everything you need to <em>fill your schedule</em>' data-es='Todo lo que necesitas para <em>llenar tu agenda</em>'>Todo lo que necesitas para <em>llenar tu agenda</em></h2>
+    </div>
+    <div class="services">
+      <div class="card"><div class="num">01</div><h3 data-en="Facebook and Instagram advertising" data-es="Publicidad en Facebook e Instagram">Publicidad en Facebook e Instagram</h3><p data-en="Digital ads designed to reach homeowners in your area." data-es="Anuncios digitales diseñados para llegar a dueños de casa en tu zona.">Anuncios digitales diseñados para llegar a dueños de casa en tu zona.</p></div>
+      <div class="card"><div class="num">02</div><h3 data-en="Qualified lead generation" data-es="Generación de leads calificados">Generación de leads calificados</h3><p data-en="Prospects interested in your services, ready to talk to you." data-es="Prospectos interesados en tus servicios, listos para hablar contigo.">Prospectos interesados en tus servicios, listos para hablar contigo.</p></div>
+      <div class="card"><div class="num">03</div><h3 data-en="Automatic prospect follow-up" data-es="Seguimiento automático de prospectos">Seguimiento automático de prospectos</h3><p data-en="No potential client is left without a response." data-es="Ningún cliente potencial se queda sin respuesta.">Ningún cliente potencial se queda sin respuesta.</p></div>
+      <div class="card"><div class="num">04</div><h3 data-en="Systems to organize clients and appointments" data-es="Sistemas para organizar clientes y citas">Sistemas para organizar clientes y citas</h3><p data-en="Your clients, estimates, and appointments in one place." data-es="Tus clientes, estimados y citas en un solo lugar.">Tus clientes, estimados y citas en un solo lugar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="industrias" class="bg-alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-en="Industries" data-es="Industrias">Industrias</div>
+      <h2 data-en='Built for <em>contractors</em>' data-es='Hecho para <em>contratistas</em>'>Hecho para <em>contratistas</em></h2>
+    </div>
+    <div class="industries">
+      <div class="industry">
+        <div class="photo"><img src="img/remodelacion.jpg" alt="Cocina de lujo remodelada" loading="lazy"></div>
+        <div class="body"><h3 data-en="Remodeling" data-es="Remodelación">Remodelación</h3><div class="sub" data-en="Kitchens · Baths · Additions" data-es="Kitchens · Baths · Additions">Kitchens · Baths · Additions</div></div>
+      </div>
+      <div class="industry">
+        <div class="photo"><img src="img/roofing.jpg" alt="Techo residencial terminado" loading="lazy"></div>
+        <div class="body"><h3>Roofing</h3><div class="sub" data-en="Replacement · Repairs · Exteriors" data-es="Replacement · Repairs · Exteriors">Replacement · Repairs · Exteriors</div></div>
+      </div>
+      <div class="industry">
+        <div class="photo"><img src="img/landscaping.jpg" alt="Jardín profesional con iluminación" loading="lazy"></div>
+        <div class="body"><h3>Landscaping</h3><div class="sub" data-en="Cleanups · Maintenance · Installs" data-es="Cleanups · Maintenance · Installs">Cleanups · Maintenance · Installs</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-en="How it works" data-es="Cómo funciona">Cómo funciona</div>
+      <h2 data-en='From ad to <em>estimate appointment</em>' data-es='De anuncio a <em>cita para estimado</em>'>De anuncio a <em>cita para estimado</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3 data-en="Publish" data-es="Publicamos">Publicamos</h3><p data-en="We launch your Facebook and Instagram ads aimed at your area and services." data-es="Lanzamos tus anuncios en Facebook e Instagram dirigidos a tu zona y tus servicios.">Lanzamos tus anuncios en Facebook e Instagram dirigidos a tu zona y tus servicios.</p></div>
+      <div class="step"><div class="n">02</div><h3 data-en="Qualify" data-es="Calificamos">Calificamos</h3><p data-en="You receive interested prospects, and we deliver the ones who can actually hire you." data-es="Recibes prospectos interesados y te entregamos los que realmente pueden contratarte.">Recibes prospectos interesados y te entregamos los que realmente pueden contratarte.</p></div>
+      <div class="step"><div class="n">03</div><h3 data-en="Schedule" data-es="Agendamos">Agendamos</h3><p data-en="We follow up automatically and organize the appointments for your estimates." data-es="Damos seguimiento automático y organizamos las citas para tus estimados.">Damos seguimiento automático y organizamos las citas para tus estimados.</p></div>
+    </div>
+    <div class="pillars" data-en='More opportunities. <span>More estimate appointments.</span><br>More chances to grow your business.' data-es='Más oportunidades. <span>Más citas para estimados.</span><br>Más posibilidades de hacer crecer tu negocio.'>Más oportunidades. <span>Más citas para estimados.</span><br>Más posibilidades de hacer crecer tu negocio.</div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <h2 class="display" data-en="Book your free consultation!" data-es="¡Agenda tu consulta gratis!">¡Agenda tu consulta gratis!</h2>
+    <p data-en="We talk about your business and show you how to get more clients for your business." data-es="Platicamos sobre tu negocio y te mostramos cómo conseguir más clientes para tu negocio.">Platicamos sobre tu negocio y te mostramos cómo conseguir más clientes para tu negocio.</p>
+    <a class="btn btn-dark" href="#contacto" data-en="Book a free consultation" data-es="Agenda una consulta gratis">Agenda una consulta gratis</a>
+  </div>
+</div>
+
+<section id="contacto">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow" data-en="Contact" data-es="Contacto">Contacto</div>
+      <h2 data-en='Book your <em>free consultation</em>' data-es='Agenda tu <em>consulta gratis</em>'>Agenda tu <em>consulta gratis</em></h2>
+      <p data-en="Tell us about your business and we'll contact you to talk about your growth goals." data-es="Cuéntanos sobre tu negocio y te contactamos para platicar sobre tus metas de crecimiento.">Cuéntanos sobre tu negocio y te contactamos para platicar sobre tus metas de crecimiento.</p>
+    </div>
+    <form id="lead-form">
+      <label><span data-en="Name" data-es="Nombre">Nombre</span><span class="req" aria-hidden="true">*</span>
+        <input name="nombre" type="text" required autocomplete="name">
+      </label>
+      <label><span data-en="Business name" data-es="Nombre de tu negocio">Nombre de tu negocio</span><span class="req" aria-hidden="true">*</span>
+        <input name="compania" type="text" autocomplete="organization" required>
+      </label>
+      <label><span data-en="Phone" data-es="Teléfono">Teléfono</span><span class="req" aria-hidden="true">*</span>
+        <input name="telefono" type="tel" required autocomplete="tel">
+      </label>
+      <label><span data-en="Business type" data-es="Tipo de negocio">Tipo de negocio</span><span class="req" aria-hidden="true">*</span>
+        <select name="servicio" required>
+          <option value="" data-en="Select an option" data-es="Selecciona una opción">Selecciona una opción</option>
+          <option data-en="Remodeling" data-es="Remodelación">Remodelación</option>
+          <option>Roofing</option>
+          <option data-en="Landscaping" data-es="Landscaping">Landscaping</option>
+          <option data-en="Other" data-es="Otro">Otro</option>
+        </select>
+      </label>
+      <p class="req-note" data-en="* Required fields" data-es="* Campos obligatorios">* Campos obligatorios</p>
+      <button class="btn" type="submit" data-en="Book your free consultation!" data-es="¡Agenda tu consulta gratis!">¡Agenda tu consulta gratis!</button>
+      <p class="thanks" id="thanks" role="status" data-en="Thank you. We received your information and will contact you soon." data-es="Gracias. Recibimos tus datos y te contactaremos pronto.">Gracias. Recibimos tus datos y te contactaremos pronto.</p>
+      <p class="form-error" id="form-error" role="alert" data-en="Something went wrong. Please try again or call us." data-es="Algo salió mal. Inténtalo de nuevo o llámanos.">Algo salió mal. Inténtalo de nuevo o llámanos.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#inicio">VELTOR <span>OPS</span></a>
+    <span data-en="Marketing for contractors" data-es="Marketing para contratistas">Marketing para contratistas</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var current = 'es';
+  var toggle = document.getElementById('lang-toggle');
+  var thanks = document.getElementById('thanks');
+  var form = document.getElementById('lead-form');
+
+  // Save the Spanish text of every translatable element once, then swap on demand.
+  var els = document.querySelectorAll('[data-en]');
+  els.forEach(function (el) {
+    el.dataset.es = el.dataset.es || el.innerHTML;
+  });
+
+  function setLang(lang) {
+    current = lang;
+    document.documentElement.lang = lang;
+    els.forEach(function (el) {
+      if (el.hasAttribute('data-es') && el.tagName !== 'INPUT') {
+        el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.es;
+      }
+    });
+    toggle.querySelectorAll('[data-lang]').forEach(function (s) {
+      s.classList.toggle('on', s.dataset.lang === lang);
+    });
+    toggle.setAttribute('aria-label', lang === 'en' ? 'Cambiar a español' : 'Switch to English');
+  }
+
+  toggle.addEventListener('click', function () {
+    setLang(current === 'es' ? 'en' : 'es');
+  });
+
+  // Form submission. Set FORM_ENDPOINT to your form service URL
+  // (for example a Formspree form, e.g. https://formspree.io/f/xxxxxxxx).
+  var FORM_ENDPOINT = 'REPLACE_WITH_FORM_ENDPOINT';
+  var errorMsg = document.getElementById('form-error');
+  var submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    thanks.style.display = 'none';
+    errorMsg.style.display = 'none';
+
+    // Every field is required: stop and show the browser's message if any is empty
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    if (FORM_ENDPOINT.indexOf('REPLACE_') === 0) {
+      console.error('Veltor Ops: set FORM_ENDPOINT in index.html to your form service URL.');
+      errorMsg.style.display = 'block';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Form submission failed');
+        form.reset();
+        thanks.style.display = 'block';
+      })
+      .catch(function () {
+        errorMsg.style.display = 'block';
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+      });
+  });
+
+  // English is the default language
+  setLang('en');
+
+  // Mobile menu
+  var menuBtn = document.getElementById('menu-btn');
+  var links = document.querySelector('.links');
+  menuBtn.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll-reveal with a small stagger inside each group
+  var targets = document.querySelectorAll('.sec-head, .card, .industry, .step, .pillars, .band h2, .band p, .band .btn, .contact > div, form');
+  var counts = new Map();
+  targets.forEach(function (el) {
+    el.classList.add('reveal');
+    var parent = el.parentElement;
+    var idx = counts.get(parent) || 0;
+    el.style.transitionDelay = (reduce ? 0 : idx * 0.12) + 's';
+    counts.set(parent, idx + 1);
+  });
+
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+          // clear the stagger delay so hover effects respond instantly afterwards
+          setTimeout(function () { entry.target.style.transitionDelay = ''; }, 1600);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function (el) { io.observe(el); });
+  } else {
+    targets.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Nav gets a shadow once the page scrolls
+  var nav = document.querySelector('nav');
+  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 10); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
